@@ -60,6 +60,7 @@
   background: #6c757d00;
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza transformaciones */
+  margin-top: 10px;
 }
 
 .card:hover {
