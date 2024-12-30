@@ -1,153 +1,171 @@
-  /* Personaliza tu portafolio */
-  body {
-    background-color: rgba(0, 0, 0, 0.8);
-    background-image: 
-      linear-gradient(#444cf7 1px, transparent 0px),
-      linear-gradient(to right, #444cf7 1px, #000000 1px);
-    background-size: 20px 20px;
-    
-  }
-  
-
-  h3, h4, h6, h1, h2, h5 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700; /* Bold para títulos */
-    color: antiquewhite;
-  }
-
-   p, label, a {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300; /* Light para subtítulos o detalles */
-    color: antiquewhite;
-  }
-
-  .text-justify{
-    text-align: justify;
-  }
-  
-
-  .hero {
-    background: rgb(0,123,255);
-    background: linear-gradient(159deg, rgba(0,123,255,1) 25%, rgba(30,30,35,1) 85%);
-    color: white;
-    text-align: center;
-    padding: 50px 0;
-    font-family: 'Courier Prime', monospace;
-  }
-
-  .project-card img {
-    height: 200px;
-    object-fit: cover;
-    border-radius: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza transformaciones */
+/* Fondo personalizado */
+body {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: 
+    linear-gradient(#444cf7 1px, transparent 0px),
+    linear-gradient(to right, #444cf7 1px, #000000 1px);
+  background-size: 20px 20px;
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina rellenos por defecto */
+  box-sizing: border-box; /* Asegura consistencia en el diseño */
 }
 
+/* Tipografía general */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; /* Bold para títulos */
+  color: antiquewhite;
+}
 
+p, label, a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300; /* Light para subtítulos o detalles */
+  color: antiquewhite;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* Sección hero */
+.hero {
+  background: linear-gradient(159deg, rgba(0,123,255,1) 25%, rgba(30,30,35,1) 85%);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: 'Courier Prime', monospace;
+}
+
+/* Tarjetas de proyectos */
 .project-card img {
-  height: 200px;
+  width: 100%; /* Asegura que las imágenes sean responsivas */
+  max-height: 200px;
   object-fit: cover;
   border-radius: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza transformaciones */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card img:hover {
-  transform: scale(1.1); /* Escala la imagen al pasar el mouse */
-  
+  transform: scale(1.1);
 }
 
 .card {
   color: #fbfbfb;
-  background: #6c757d00;
+  background: rgba(108, 117, 125, 0);
   border-radius: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza transformaciones */
   margin-top: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-10px); /* Mueve ligeramente la tarjeta hacia arriba */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Agrega un efecto de sombra */
-}
-.card {
-    color: #fbfbfb;
-    background: #6c757d00;
-    border-radius: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza transformaciones */
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-  footer {
-    background: #6c757d;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 0px;
-  }
+/* Footer */
+footer {
+  background: #6c757d;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
 
+/* Botones */
+.btn {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
 
-  .btn {
-    border: none;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300; /* Light para subtítulos o detalles */
-  }
+/* Iconos */
+.icon {
+  color: #fbfbfb;
+  text-shadow: 2px 2px 5px rgba(0, 123, 255, 0.5);
+}
 
-  .icon{
-    color: #fbfbfb;
-    text-shadow: 2px 2px 5px rgba(0, 123, 255, 0.5);
+/* Imagen perfil */
+.juan {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  box-shadow: 0px 0px 30px 10px rgba(0, 123, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  }
+.juan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
 
-  .juan{
-    width: 200px;
-    height: 200px;
-    border-radius: 300px;
-    display: block;
-    margin:  auto; /* Centrado horizontal */
-    max-width: 100%; /* Escalado responsivo */
-    box-shadow: 0px 0px 30px 10px rgba(0, 123, 255, 0.5); /* Aura */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .juan:hover {
-    transform: translateY(-10px); /* Mueve ligeramente la tarjeta hacia arriba */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Agrega un efecto de sombra */
-  }
-
-  .about{
-    margin: 20px;
-  }
-
- .colorsection1{
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.500) 0%, rgba(30, 30, 35, 0.500) 10%);
-  margin: 0; /* Elimina márgenes externos */
-  padding: 20px; /* Opcional si no necesitas relleno */
- }
-
- .colorsection2{
-  background: rgb(30,30,35);
-  background: linear-gradient(0deg, rgba(30, 30, 35, 0.500) 0%, rgba(0, 0, 0, 0.500) 10%);
-  margin: 0; /* Elimina márgenes externos */
-  padding:20px; /* Opcional si no necesitas relleno */
- }
-
- .colorsection1, .colorsection2 {
+/* Secciones de color */
+.colorsection1, .colorsection2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 20px;
+  margin: 0;
 }
 
- .line {
+.colorsection1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(30, 30, 35, 0.5) 10%);
+}
+
+.colorsection2 {
+  background: linear-gradient(0deg, rgba(30, 30, 35, 0.5) 0%, rgba(0, 0, 0, 0.5) 10%);
+}
+
+/* Línea divisoria */
+.line {
   width: 100%;
-  height: 20px; /* Grosor de la línea */
-  background: rgb(30, 30, 35, 0.500);
-  background: linear-gradient(0deg, rgba(30, 30, 35, 0.500) 43%, rgba(0,123,255,1) 77%);
+  height: 20px;
+  background: linear-gradient(0deg, rgba(30, 30, 35, 0.5) 43%, rgba(0,123,255,1) 77%);
 }
 
- .collapse .card-body {
-  color: #ffffff;
-  border-radius: 10px;
+/* Formulario */
+.formulario {
+  position: relative;
+  margin-top: 10px;
+  padding: 10px;
 }
 
-.formulario{
-position: relative;
-margin-top: 10px;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px 10px;
+  }
+
+  .juan {
+    width: 150px;
+    height: 150px;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+
+  .card {
+    margin: 10px auto;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    font-size: 0.9em;
+  }
+
+  .juan {
+    width: 120px;
+    height: 120px;
+  }
+
+  footer {
+    padding: 8px;
+  }
 }
