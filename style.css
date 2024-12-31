@@ -100,7 +100,7 @@ footer {
 
 .juan:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Secciones de color */
@@ -117,14 +117,14 @@ footer {
 }
 
 .colorsection2 {
-  background: linear-gradient(0deg, rgba(30, 30, 35, 0.700) 0%, rgba(0, 0, 0, 0.5) 10%);
+  background: linear-gradient(0deg, rgba(30, 30, 35, 0.60) 0%, rgba(0, 0, 0, 0.5) 10%);
 }
 
 /* Línea divisoria */
 .line {
   width: 100%;
   height: 20px;
-  background: linear-gradient(0deg, rgba(30, 30, 35, 0.700) 43%, rgba(0,123,255,1) 77%);
+  background: linear-gradient(0deg, rgba(30, 30, 35, 0.5) 43%, rgba(0,123,255,1) 77%);
 }
 
 /* Formulario */
